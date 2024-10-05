@@ -1,0 +1,28 @@
+REDBUS Data Scraping Project
+This project focuses on scraping comprehensive bus service details from REDBUS, using Python, Selenium, MySQL, and Streamlit to create a complete data pipeline and interactive web interface.
+
+Project Overview
+Data Scraping
+File: REDBUS PROJECT
+Description:
+This script extracts bus service details from REDBUS, with three key functions:
+
+First Page: Collects hyperlinks for various bus services.
+Second Page: Gathers route names and links for each service.
+Final Page: Scrapes detailed bus info such as name, type, departure and arrival times, duration, rating, price, and available seats. Note: The complete process takes around 1.5 to 2 hours.
+Processed Data
+File: output_redbus.xlsx
+Description:
+The scraped data is stored in an Excel file for easy access and further use.
+
+Database Creation
+File: MY SQL CONNECTOR
+Description:
+Converts the Excel data into a MySQL database. This script:
+
+Creates a database and table for storing bus details.
+Inserts the scraped data into the MySQL database.
+Streamlit Application
+File: STREAMLIT
+Description:
+A user-friendly web app built with Streamlit that connects to the MySQL database, allowing users to view and analyze bus service data interactively.
